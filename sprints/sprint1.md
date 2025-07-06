@@ -30,6 +30,8 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 | Veri Setlerinin Birleştirilip Kategorik Sütunların Encode Edilmesi | Veri setleri birleştirilerek daha geniş ve çeşitli bir örneklem elde edildi. Ardından, makine öğrenmesi modellerinin çalışabilmesi için kategorik sütunlar sayısal değerlere dönüştürüldü (encoding). | ✅ Tamamlandı |
 | GitHub Yapılandırması | `README.md`, `requirements.txt` ve src klasörleri oluşturuldu. Versiyon kontrolü başlatıldı. | ✅ Tamamlandı |
 
+Kanban Tablosu: [Google Drive](https://drive.google.com/file/d/18CWY_AznkcXN7mXoZUiWjtSCVUtd-ILN/view?usp=sharing)
+
 ---
 
 ## 📈 Teknik Bulgular ve Gözlemler
@@ -39,7 +41,7 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 
 ---
 
-# ✨ Sprint Retrospective
+## ✨ Sprint Retrospective
 
 ## 🧩 Karşılaşılan Zorluklar
 
@@ -65,7 +67,7 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 | --- | --- |
 | 🧠 Yeni Modeller | XGBoost, LightGBM ve SVM gibi daha gelişmiş modeller test edilecek. |
 | 🧰 Açıklanabilirlik | SHAP ve LIME gibi araçlarla model kararları görselleştirilecek. Özellikle sağlık alanında bu adım kritik öneme sahiptir. |
-| 🧪 Test Otomasyonu | Notebook’ların test edilebilir hale getirilmesi ve CI/CD entegrasyonu için GitHub Actions yapılandırılacak. |
+| 🧪 Test Otomasyonu | Notebook'ların test edilebilir hale getirilmesi ve CI/CD entegrasyonu için GitHub Actions yapılandırılacak. |
 | 📄 Belgeler | `README.md` dosyası genişletilecek, kullanım kılavuzu ve model açıklamaları eklenecek. |
 
 ---
@@ -111,3 +113,7 @@ OBESITYRISKPREDICTIONAPP/
 - Proje, sağlık alanında kullanılacağı için etik sorumluluklar göz önünde bulundurulmalıdır. Modelin yanlış tahminleri ciddi sonuçlar doğurabilir.
 - Kullanıcı arayüzü geliştirilirken kullanıcı gizliliği ve veri güvenliği ön planda tutulmalıdır.
 - Modelin farklı yaş grupları ve cinsiyetler üzerindeki performansı ayrı ayrı değerlendirilecektir.
+
+## Kanban Tablomuz
+
+Kanban tablomuza [[bu](https://airtable.com/invite/l?inviteId=invGHsXUc6IiFsVk0&inviteToken=c14ed47856b30a163c7e14f6fad6487a7b1323b5bb430540083641b6b84a9e7a&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)] linkten ulaşabilirsiniz.
