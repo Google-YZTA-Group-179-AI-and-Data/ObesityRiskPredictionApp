@@ -7,7 +7,7 @@
 **Sprint Takımı:** Google YZTA Group 179  
 **Sprint Sahibi:** Atalay Aygül ve Özkan Bırak  
 **Scrum Master:** Özkan Bırak  
-**Sprint Hedefi:** Veri setinin toplanması, ön işlenmesi, temel makine öğrenmesi modellerinin eğitilmesi ve proje yapısının temellerinin oluşturulması.
+**Sprint Hedefi:** Veri setinin toplanması, ön işlenmesi ve proje yapısının temellerinin oluşturulması.
 
 ---
 
