@@ -39,7 +39,7 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 
 ---
 
-# ✨ Sprint Retrospective
+## ✨ Sprint Retrospective
 
 ## 🧩 Karşılaşılan Zorluklar
 
@@ -65,7 +65,7 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 | --- | --- |
 | 🧠 Yeni Modeller | XGBoost, LightGBM ve SVM gibi daha gelişmiş modeller test edilecek. |
 | 🧰 Açıklanabilirlik | SHAP ve LIME gibi araçlarla model kararları görselleştirilecek. Özellikle sağlık alanında bu adım kritik öneme sahiptir. |
-| 🧪 Test Otomasyonu | Notebook’ların test edilebilir hale getirilmesi ve CI/CD entegrasyonu için GitHub Actions yapılandırılacak. |
+| 🧪 Test Otomasyonu | Notebook'ların test edilebilir hale getirilmesi ve CI/CD entegrasyonu için GitHub Actions yapılandırılacak. |
 | 📄 Belgeler | `README.md` dosyası genişletilecek, kullanım kılavuzu ve model açıklamaları eklenecek. |
 
 ---
