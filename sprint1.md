@@ -17,8 +17,6 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 
 - 📥 Obezite ile ilişkili yaşam tarzı ve fiziksel özellikleri içeren veri setinin toplanması ve incelenmesi  
 - 🧹 Verinin temizlenmesi, eksik değerlerin işlenmesi ve uygun şekilde dönüştürülmesi  
-- 📊 Veri keşfi (EDA) ile değişkenlerin dağılımı, korelasyonları ve sınıf dengesizliğinin analiz edilmesi  
-- 🧠 Temel makine öğrenmesi modellerinin (ör. Lojistik Regresyon, Karar Ağaçları, Random Forest) eğitilmesi  
 - 📁 Proje klasör yapısının oluşturulması ve GitHub üzerinden versiyon kontrolünün başlatılması  
 - 📄 İlk bulguların ve kararların belgelenmesi
 
@@ -114,5 +112,3 @@ OBESITYRISKPREDICTIONAPP/
 - Kullanıcı arayüzü geliştirilirken kullanıcı gizliliği ve veri güvenliği ön planda tutulmalıdır.
 - Modelin farklı yaş grupları ve cinsiyetler üzerindeki performansı ayrı ayrı değerlendirilecektir.
 ```
-
-Bu dosyayı `docs/sprint-1/sprint1.md` olarak kaydedebilirsin. İstersen bu yapıyı otomatik olarak oluşturan bir betik de yazabilirim. Hazırsan Sprint 2 planlamasına da geçebiliriz!
