@@ -111,3 +111,7 @@ OBESITYRISKPREDICTIONAPP/
 - Proje, sağlık alanında kullanılacağı için etik sorumluluklar göz önünde bulundurulmalıdır. Modelin yanlış tahminleri ciddi sonuçlar doğurabilir.
 - Kullanıcı arayüzü geliştirilirken kullanıcı gizliliği ve veri güvenliği ön planda tutulmalıdır.
 - Modelin farklı yaş grupları ve cinsiyetler üzerindeki performansı ayrı ayrı değerlendirilecektir.
+
+## Kanban Tablomuz
+
+Kanban tablomuza [[bu](https://airtable.com/invite/l?inviteId=invGHsXUc6IiFsVk0&inviteToken=c14ed47856b30a163c7e14f6fad6487a7b1323b5bb430540083641b6b84a9e7a&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)] linkten ulaşabilirsiniz.
