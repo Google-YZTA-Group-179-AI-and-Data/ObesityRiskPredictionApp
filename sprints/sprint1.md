@@ -30,6 +30,8 @@ Bu sprintte aşağıdaki hedeflerin gerçekleştirilmesi planlanmıştır:
 | Veri Setlerinin Birleştirilip Kategorik Sütunların Encode Edilmesi | Veri setleri birleştirilerek daha geniş ve çeşitli bir örneklem elde edildi. Ardından, makine öğrenmesi modellerinin çalışabilmesi için kategorik sütunlar sayısal değerlere dönüştürüldü (encoding). | ✅ Tamamlandı |
 | GitHub Yapılandırması | `README.md`, `requirements.txt` ve src klasörleri oluşturuldu. Versiyon kontrolü başlatıldı. | ✅ Tamamlandı |
 
+Kanban Tablosu: [Google Drive](https://drive.google.com/file/d/18CWY_AznkcXN7mXoZUiWjtSCVUtd-ILN/view?usp=sharing)
+
 ---
 
 ## 📈 Teknik Bulgular ve Gözlemler
