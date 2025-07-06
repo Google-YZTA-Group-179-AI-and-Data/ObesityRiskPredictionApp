@@ -111,4 +111,3 @@ OBESITYRISKPREDICTIONAPP/
 - Proje, sağlık alanında kullanılacağı için etik sorumluluklar göz önünde bulundurulmalıdır. Modelin yanlış tahminleri ciddi sonuçlar doğurabilir.
 - Kullanıcı arayüzü geliştirilirken kullanıcı gizliliği ve veri güvenliği ön planda tutulmalıdır.
 - Modelin farklı yaş grupları ve cinsiyetler üzerindeki performansı ayrı ayrı değerlendirilecektir.
-```
