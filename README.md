@@ -1,154 +1,138 @@
-# 🏥 Obesity Risk Prediction App
 
-A full-stack web application that predicts obesity risk using machine learning, built with React, Python Flask, and deployed on Vercel.
 
-## 🚀 Features
+# 🏥 Obezite Risk Tahmin Uygulaması
 
-- **AI-Powered Predictions**: Uses Random Forest classifier trained on obesity dataset
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
-- **Real-time Analysis**: Instant health risk assessment
-- **Detailed Explanations**: Clear reasoning behind predictions
-- **Personalized Recommendations**: Tailored health advice
-- **Professional UI**: Modern, healthcare-focused design
+Makine öğrenmesi kullanarak bireylerin obezite riskini tahmin eden, React ve Python Flask tabanlı tam yığın bir web uygulamasıdır. Uygulama Vercel üzerinden dağıtılmıştır.
 
-## 🛠️ Tech Stack
+## 🚀 Özellikler
 
-### Frontend
-- **React 18** - UI library
-- **Vite** - Build tool
-- **Tailwind CSS** - Styling
-- **Axios** - API calls
-- **Prettier** - Code formatting
+- **Yapay Zekâ Destekli Tahminleme**: Obezite veri seti üzerinde eğitilmiş Random Forest sınıflandırıcısı
+- **Duyarlı Tasarım (Responsive Design)**: Masaüstü, tablet ve mobil cihazlarda sorunsuz çalışır
+- **Gerçek Zamanlı Analiz**: Anında sağlık riski değerlendirmesi
+- **Detaylı Açıklamalar**: Tahminlerin arkasındaki mantık açıkça belirtilir
+- **Kişiselleştirilmiş Öneriler**: Kullanıcıya özel sağlık tavsiyeleri
+- **Profesyonel Arayüz**: Modern, sağlık odaklı kullanıcı deneyimi
 
-### Backend
-- **Python 3.9+** - Runtime
-- **Flask** - Web framework
-- **scikit-learn** - Machine learning
-- **pandas** - Data processing
-- **numpy** - Numerical computing
+## 🛠️ Teknoloji Yığını
 
-### Deployment
-- **Vercel** - Hosting platform
-- **Serverless Functions** - Backend deployment
+### Ön Yüz (Frontend)
+- **React 18** – Arayüz kütüphanesi
+- **Vite** – Derleme aracı
+- **Tailwind CSS** – Stil oluşturma
+- **Axios** – API çağrıları
+- **Prettier** – Kod biçimlendirme
 
-## 📦 Installation & Setup
+### Arka Yüz (Backend)
+- **Python 3.9+** – Çalışma zamanı
+- **Flask** – Web çatısı
+- **scikit-learn** – Makine öğrenmesi
+- **pandas** – Veri işleme
+- **numpy** – Sayısal hesaplama
 
-### Prerequisites
-- Node.js 18+ and npm
+### Dağıtım
+- **Vercel** – Barındırma platformu
+- **Sunucusuz Fonksiyonlar** – Arka uç dağıtımı
+
+## 📦 Kurulum ve Yapılandırma
+
+### Gereksinimler
+- Node.js 18+ ve npm
 - Python 3.9+
 - Git
 
-### 1. Clone Repository
+### 1. Depoyu Klonlayın
 ```bash
 git clone https://github.com/yourusername/obesity-prediction-app.git
 cd obesity-prediction-app
 ```
 
-### 2. Backend Setup
+### 2. Backend Kurulumu
 ```bash
-# Create virtual environment
 python -m venv venv
-
-# Activate virtual environment
-# On Windows:
+# Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+# macOS/Linux:
 source venv/bin/activate
 
-# Install Python dependencies
 pip install -r requirements.txt
 
-# Add your train.csv file to the root directory
-# Make sure it has the columns: ID,Age,Gender,Height,Weight,CALC,FAVC,FCVC,NCP,SCC,SMOKE,CH2O,family_history_with_overweight,FAF,TUE,CAEC,MTRANS,NObeyesdad
+# Ana dizine train.csv dosyanızı ekleyin. Şu sütunları içermelidir:
+# ID, Age, Gender, Height, Weight, CALC, FAVC, FCVC, NCP, SCC, SMOKE, CH2O,
+# family_history_with_overweight, FAF, TUE, CAEC, MTRANS, NObeyesdad
 
-# Run backend server
 python app.py
 ```
 
-### 3. Frontend Setup
+### 3. Frontend Kurulumu
 ```bash
-# Install Node.js dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
-### 4. Access Application
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:5000
+### 4. Uygulamaya Erişim
+- Ön Yüz: http://localhost:5173
+- Arka Yüz API: http://localhost:5000
 
-## 🚀 Deployment
+## 🚀 Dağıtım (Deployment)
 
-### Deploy Backend to Vercel
+### Backend’i Vercel’e Dağıtmak
 
-1. **Prepare Backend**
+1. **Backend’i Hazırlayın**
 ```bash
-# Create a new folder for backend
 mkdir obesity-backend
 cd obesity-backend
-
-# Copy backend files
 cp ../app.py .
 cp ../requirements.txt .
 cp ../vercel.json .
 cp ../train.csv .
 ```
 
-2. **Deploy to Vercel**
+2. **Vercel ile Dağıtım**
 ```bash
-# Install Vercel CLI
 npm install -g vercel
-
-# Deploy
 vercel --prod
 ```
 
-3. **Note the backend URL** (e.g., `https://your-backend-123.vercel.app`)
+3. **Backend URL’nizi not alın** (örn. `https://your-backend-123.vercel.app`)
 
-### Deploy Frontend to Vercel
+### Frontend’i Vercel’e Dağıtmak
 
-1. **Update API URL in React App**
+1. **React Uygulamasında API URL’sini Güncelleyin**
 ```javascript
-// In src/App.jsx, update the API_URL
 const API_URL = 'https://your-backend-123.vercel.app/api'
 ```
 
-2. **Deploy Frontend**
+2. **Dağıtım**
 ```bash
-# Build the app
 npm run build
-
-# Deploy to Vercel
 vercel --prod
 ```
 
-## 📊 Dataset Requirements
+## 📊 Veri Seti Gereksinimleri
 
-Your `train.csv` should have these columns:
-- `ID` - Unique identifier
-- `Age` - Age in years
-- `Gender` - Male/Female
-- `Height` - Height in cm
-- `Weight` - Weight in kg
-- `CALC` - Calories consumption monitoring (yes/no)
-- `FAVC` - Frequent consumption of high caloric food (yes/no)
-- `FCVC` - Frequency of vegetable consumption (1-3)
-- `NCP` - Number of main meals (1-4)
-- `SCC` - Consumption of food between meals (no/Sometimes/Frequently/Always)
-- `SMOKE` - Smoking (yes/no)
-- `CH2O` - Consumption of water daily (1-3)
-- `family_history_with_overweight` - Family history (yes/no)
-- `FAF` - Physical activity frequency (0-3)
-- `TUE` - Time using technology devices (0-2)
-- `CAEC` - Consumption of alcohol (no/Sometimes/Frequently/Always)
-- `MTRANS` - Transportation used (Walking/Public_Transportation/Automobile/Bike)
-- `NObeyesdad` - Target variable (obesity level)
+`train.csv` şu sütunları içermelidir:
+- `ID` – Benzersiz kimlik
+- `Age` – Yaş (yıl)
+- `Gender` – Erkek/Kadın
+- `Height` – Boy (cm)
+- `Weight` – Kilo (kg)
+- `CALC` – Kalori tüketim takibi (yes/no)
+- `FAVC` – Yüksek kalorili besin tüketimi (yes/no)
+- `FCVC` – Sebze tüketim sıklığı (1-3)
+- `NCP` – Ana öğün sayısı (1-4)
+- `SCC` – Ara öğün tüketimi (no/Sometimes/Frequently/Always)
+- `SMOKE` – Sigara kullanımı (yes/no)
+- `CH2O` – Günlük su tüketimi (1-3)
+- `family_history_with_overweight` – Ailede fazla kilo geçmişi (yes/no)
+- `FAF` – Fiziksel aktivite sıklığı (0-3)
+- `TUE` – Teknoloji kullanımı süresi (0-2)
+- `CAEC` – Alkol tüketimi (no/Sometimes/Frequently/Always)
+- `MTRANS` – Ulaşım türü (Walking/Public_Transportation/Automobile/Bike)
+- `NObeyesdad` – Hedef değişken (obezite seviyesi)
 
-## 🔧 Configuration
+## 🔧 Yapılandırma
 
-### Environment Variables
-Create `.env` files for configuration:
+### Ortam Değişkenleri
 
 **Backend (.env)**
 ```
@@ -161,35 +145,27 @@ MODEL_PATH=obesity_model.pkl
 VITE_API_URL=https://your-backend-url.vercel.app/api
 ```
 
-## 🧪 Testing
+## 🧪 Test Süreci
 
-### Backend Testing
+### Backend Testleri
 ```bash
-# Test health endpoint
 curl http://localhost:5000/api/health
 
-# Test prediction endpoint
 curl -X POST http://localhost:5000/api/predict \
   -H "Content-Type: application/json" \
   -d '{"age": 25, "gender": "Male", "height": 175, "weight": 70, ...}'
 ```
 
-### Frontend Testing
+### Frontend Testleri
 ```bash
-# Run development server
 npm run dev
-
-# Build for production
 npm run build
-
-# Preview production build
 npm run preview
 ```
 
-## 📱 API Endpoints
+## 📱 API Uç Noktaları
 
 ### GET /api/health
-Health check endpoint
 ```json
 {
   "status": "healthy",
@@ -198,64 +174,248 @@ Health check endpoint
 ```
 
 ### POST /api/predict
-Predict obesity risk
 ```json
 {
   "prediction": "Normal_Weight",
   "confidence": 85.3,
-  "explanation": ["Your BMI is in normal range", "..."],
+  "explanation": ["Vücut kitle indeksiniz normal aralıkta", "..."],
   "bmi": 22.9,
   "risk_level": "Low",
-  "recommendations": ["Continue healthy habits", "..."]
+  "recommendations": ["Sağlıklı alışkanlıklara devam edin", "..."]
 }
 ```
 
-## 🎯 Model Performance
+## 🤝 Katkıda Bulunmak
 
-The machine learning model achieves:
-- **Accuracy**: ~85-90% on test data
-- **Algorithm**: Random Forest Classifier
-- **Features**: 16 health and lifestyle indicators
-- **Classes**: 7 obesity levels
+1. Repoyu çatallayın (fork)
+2. Yeni bir dal (branch) oluşturun
+3. Gerekli değişiklikleri yapın
+4. Testlerinizi ekleyin
+5. Pull Request gönderin
 
-## 🔍 Troubleshooting
+## 📄 Lisans
 
-### Common Issues
+Bu proje MIT Lisansı kapsamında lisanslanmıştır – Detaylar için `LICENSE` dosyasına bakınız.
 
-1. **Model Training Fails**
-   - Ensure train.csv is in the correct format
-   - Check for missing values in dataset
-   - Verify column names match exactly
+## 🙏 Teşekkürler
 
-2. **API Errors**
-   - Check backend logs for detailed error messages
-   - Verify CORS settings for cross-origin requests
-   - Ensure all required fields are sent in requests
-
-3. **Deployment Issues**
-   - Check Vercel function logs
-   - Verify environment variables are set
-   - Ensure requirements.txt includes all dependencies
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Dataset providers for obesity research data
-- scikit-learn community for ML tools
-- React and Flask communities for excellent frameworks
-- Vercel for seamless deployment platform
+- Veri sağlayıcılarına
+- scikit-learn geliştirici topluluğuna
+- React ve Flask topluluklarına
+- Vercel platformuna
 
 ---
 
-**⚠️ Medical Disclaimer**: This application is for educational and research purposes only. Always consult healthcare professionals for medical advice.
+**⚠️ Tıbbi Uyarı**: Bu uygulama yalnızca eğitim ve araştırma amaçlıdır. Tıbbi teşhis veya tedavi için sağlık uzmanlarına başvurulmalıdır.
+
+
+# 🏥 Obesity Risk Prediction App - Sprint 1 Detaylı Rapor ve Belgelendirme
+
+> Google Yapay Zekâ ve Teknoloji Akademisi | Grup 179 | Sprint 1 Dönemi: 24 Haziran - 6 Temmuz 2025  
+> Proje Sahipleri: **Atalay Aygül**, **Özkan Bırak**  
+> Scrum Master: **Özkan Bırak**  
+> Takım Üyeleri: Gökhan Mutlu, Oğuzhan Memiş, Fatmanur Şahin  
+
+---
+
+## 📌 Her Sprint Sonunda Beklenen Öğeler
+
+Sprint sürecimiz, Google YZTA tarafından belirtilen şu yapılandırmalar etrafında şekillendirilmiştir:
+
+- 📝 **Sprint Notları**  
+- 📊 **Tahmin Edilen ve Tamamlanan Puanlar**  
+- 🧠 **Tahmin Mantığı**  
+- 🗓️ **Daily Scrum Günlükleri**  
+- 🗂️ **Sprint Board Güncellemeleri**  
+- 🖼️ **Screenshot'lar**  
+- 🧪 **Sprint Review**  
+- 🎯 **Sprint Retrospective**
+
+---
+
+## 📘 Ürün Tanımı
+
+**Obesity Risk Prediction App**, bireylerin sağlık verilerine dayanarak obezite riskini makine öğrenmesi modelleriyle tahmin etmeyi amaçlayan, yapay zekâ destekli bir tam yığın (full-stack) web uygulamasıdır.
+
+---
+
+## 🔍 Ürün Özellikleri
+
+- **🔬 Yapay Zekâ ile Tahminleme:** Random Forest modelini temel alır.
+- **⚡ Gerçek Zamanlı Sonuçlar:** Kullanıcının form girdileriyle anlık sonuç verir.
+- **💬 Tahmin Açıklamaları:** SHAP/LIME gibi araçlarla karar şeffaflığı.
+- **🧠 Sağlık Tabanlı Tavsiyeler:** Kişiselleştirilmiş sağlık önerileri.
+- **📱 Mobil Uyumlu:** Responsive tasarım, modern kullanıcı arayüzü.
+
+---
+
+## 🎯 Sprint 1 – Planlama ve Süreç
+
+### 🗓️ Sprint Süresi:
+- **Başlangıç:** 24 Haziran 2025
+- **Bitiş:** 6 Temmuz 2025
+- **Süre:** 2 Hafta
+
+### ✅ Sprint Hedefleri:
+- Veri seti analizi ve temizliği
+- Proje klasör mimarisi kurulumu
+- React ve Flask bazlı temel sistem kurulumu
+- Versiyon kontrol entegrasyonu (GitHub)
+- İlk API yapılandırmaları ve arayüz prototipi
+
+---
+
+## 📈 Sprint Tahmin Puanları
+
+| User Story | Açıklama | Puan |
+|------------|----------|------|
+| Veri Temini | Kaggle üzerinden veri indirme | 3 |
+| Ön İşleme | Encoding, null temizleme | 5 |
+| Model Entegrasyonu | RandomForest modelinin eğitilmesi | 8 |
+| Frontend Prototip | React bileşenlerinin ilk kurulumu | 5 |
+| Backend Setup | Flask ile API başlatılması | 5 |
+| Docker & Vercel Yapılandırması | Temel CI/CD entegrasyonu | 5 |
+| GitHub Yapılandırması | README, .gitignore, yapı kurulumu | 4 |
+| Notion + Scrum Günlükleri | Daily Scrum kayıtları | 2 |
+| Toplam |  | **37 SP** |
+
+### 🎯 Gerçekleşen: 35 SP tamamlandı  
+> Docker deployment kısmı eksik kaldı ve Sprint 2’ye devredildi.
+
+---
+
+## 🧠 Tahmin Mantığı
+
+Tahmin puanlaması, Scrum Poker ile aşağıdaki kriterlere göre yapılmıştır:
+
+- Görevin teknik karmaşıklığı
+- Zaman tahmini
+- Ekip deneyimi
+- Dış bağımlılıklar (örneğin Vercel kurulumu vs.)
+
+---
+
+## 🗓️ Daily Scrum Günlükleri
+
+- Her gün saat **21:00**'de Google Meet üzerinden toplantı gerçekleştirildi.
+- Notlar **Notion** üzerinden tutuldu.
+- Günlük toplantılarda 3 temel soru yanıtlandı:
+  1. Dün ne yaptım?
+  2. Bugün ne yapacağım?
+  3. Karşılaştığım engeller nelerdir?
+
+---
+
+## 📌 Sprint Board ve Güncellemeler
+
+- Airtable üzerinden **Kanban board** kullanıldı.
+- Her görev; "Kategorize Edilmemiş", "Yapılacak", "Devam Ediyor", "Bitti" sütunlarıyla izlenmiştir.
+
+🔗 [Airtable Kanban Tablomuz](https://airtable.com/invite/l?inviteId=invGHsXUc6IiFsVk0)
+
+---
+
+## 📸 Screenshotlar
+
+### 📍 Sprint Board
+![Kanban Board](https://drive.google.com/uc?export=view&id=18CWY_AznkcXN7mXoZUiWjtSCVUtd-ILN)
+
+> Not: Geliştirilen React arayüzü ve Flask API çıktıları da eklenmelidir.
+
+---
+
+## ✅ Sprint Review
+
+### Tamamlananlar:
+
+- Kaggle veri seti indirildi ve analiz edildi.
+- Flask backend ile tahmin API'si yazıldı.
+- React arayüzü oluşturuldu, form tasarımı başlatıldı.
+- Kategorik veriler encode edildi.
+- GitHub kurulumu tamamlandı ve versiyon kontrol başladı.
+
+---
+
+## 🔍 Sprint Retrospective
+
+| Zorluk | Açıklama |
+|--------|----------|
+| Özellik Anlamı | CAEC, SCC gibi değişkenler domain bilgisi gerektiriyor. |
+| Şeffaflık | Model yorumlanabilirliğini artırmak için SHAP/LIME entegrasyonu Sprint 2'ye bırakıldı. |
+| Ortam Sorunu | Python paket sürümleri arasında uyumsuzluk yaşandı. Çözüldü. |
+
+### ✨ Öğrenilenler
+
+- Feature engineering süreci çok kritik.
+- Basit arayüz bile kullanıcı deneyiminde fark yaratıyor.
+- GitHub üzerinden yapılan atomik commit'ler ileride ciddi fayda sağlıyor.
+
+---
+
+## 🧭 Bir Sonraki Sprint Planı (Sprint 2)
+
+| Hedef | Detay |
+|-------|-------|
+| XGBoost ve LightGBM entegrasyonu | Model başarımını artırmak için |
+| SHAP ve LIME | Tahmin açıklamalarının görselleştirilmesi |
+| Test Otomasyonu | GitHub Actions ile pipeline kurulumu |
+| Kullanıcı Geri Bildirimi | Prototip testlerine başlamak |
+
+---
+
+## 📂 Klasör Yapısı
+
+```
+OBESITYRISKPREDICTIONAPP/
+|
+├── ap.py
+├── index.html
+├── nginx.conf
+├── package.json
+├── requirements.txt
+├── vite.config.json
+├── vercel.json
+├── docker-compose.yml
+├── Dockerfile.backend
+├── Dockerfile.frontend
+├── .gitignore
+|
+├── data/
+│   ├── train.csv
+│   └── train (1).csv
+│
+├── src/
+│   ├── App.css
+│   └── App.jsx
+│
+└── README.md
+```
+
+---
+
+## 🛡️ Etik ve Güvenlik Notu
+
+- Tahminler yalnızca **eğitim ve araştırma** amaçlıdır.
+- **Tıbbi tavsiye yerine geçmez**.
+- Veri gizliliği ve kullanıcı güvenliği en önemli önceliklerden biridir.
+
+---
+
+## 🧠 Katılımcı Durumu
+
+| Takım Üyesi | Katılım |
+|-------------|---------|
+| Atalay Aygül | ✅ Aktif |
+| Özkan Bırak | ✅ Aktif |
+| Gökhan Mutlu | ⛔ Katkı Sağlamadı |
+| Oğuzhan Memiş | ⚠️ Sınırlı |
+| Fatmanur Şahin | ⛔ Katkı Sağlamadı |
+
+---
+
+## 📜 Lisans
+
+MIT License - Ayrıntılar için `LICENSE` dosyasına bakınız.
+
+---
+
