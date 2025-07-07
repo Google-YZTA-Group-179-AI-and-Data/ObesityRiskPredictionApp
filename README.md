@@ -320,7 +320,7 @@ Tahmin puanlaması, Scrum Poker ile aşağıdaki kriterlere göre yapılmıştı
 ### 📍 Sprint Board
 ![Kanban Board](https://drive.google.com/uc?export=view&id=18CWY_AznkcXN7mXoZUiWjtSCVUtd-ILN)
 
-![Geliştirilen Arayüz Örneği](https://drive.google.com/file/d/1LwzKu1Ux81Qd6dbsQ5s1lCN_sUlVcyhX)
+![Geliştirilen Arayüz Örneği](https://drive.google.com/file/d/1LwzKu1Ux81Qd6dbsQ5s1lCN_sUlVcyhX/view?usp=sharing)
 
 ---
 
