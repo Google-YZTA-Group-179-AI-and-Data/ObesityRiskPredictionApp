@@ -16,7 +16,7 @@ Makine öğrenmesi kullanarak bireylerin obezite riskini tahmin eden, React ve P
 ## 🛠️ Teknoloji Yığını
 
 ### Ön Yüz (Frontend)
-- **React 18** – Arayüz kütüphanesi
+- **React 18** _–_ Arayüz kütüphanesi
 - **Vite** – Derleme aracı
 - **Tailwind CSS** – Stil oluşturma
 - **Axios** – API çağrıları
@@ -320,7 +320,7 @@ Tahmin puanlaması, Scrum Poker ile aşağıdaki kriterlere göre yapılmıştı
 ### 📍 Sprint Board
 ![Kanban Board](https://drive.google.com/uc?export=view&id=18CWY_AznkcXN7mXoZUiWjtSCVUtd-ILN)
 
-> Not: Geliştirilen React arayüzü ve Flask API çıktıları da eklenmelidir.
+![Geliştirilen Arayüz Örneği](https://drive.google.com/file/d/1LwzKu1Ux81Qd6dbsQ5s1lCN_sUlVcyhX)
 
 ---
 
