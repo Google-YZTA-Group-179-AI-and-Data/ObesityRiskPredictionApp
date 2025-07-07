@@ -323,6 +323,10 @@ Tahmin puanlaması, Scrum Poker ile aşağıdaki kriterlere göre yapılmıştı
 ### 📍 Ürünün İlk Ekran Görüntüsü
 ![Sprint Beklentileri Görseli](https://drive.google.com/uc?export=view&id=1LwzKu1Ux81Qd6dbsQ5s1lCN_sUlVcyhX)
 
+### 📂 Daily Scrum Ekran Fotoğrafları
+
+[Daily Scrum Klasörü](https://drive.google.com/drive/folders/1J5SJrOuLE_r3JL68ceslm-7Mv2Kfanqj?usp=sharing)
+
 ---
 
 ## ✅ Sprint Review
