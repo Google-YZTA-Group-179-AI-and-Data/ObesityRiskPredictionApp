@@ -398,6 +398,113 @@ OBESITYRISKPREDICTIONAPP/
 
 ---
 
+# 🚀 Sprint 2 – Geliştirme
+
+> Sprint 2 Dönemi: **7 Temmuz – 20 Temmuz 2025**
+
+---
+
+## ✅ Sprint Hedefleri
+
+- Model performansını artırmak (KNN, Random Forest, Grid Search)
+- Veri analizi derinleştirme (EDA)
+- API bağlantı yapılarının incelenmesi
+- Veri transfer yöntemlerinin araştırılması
+- Model doğruluklarının karşılaştırılması
+- Yeni model adaylarının değerlendirilmesi (XGBoost, LightGBM hazırlıkları)
+
+---
+
+## 📈 Sprint Tahmin Puanları
+
+| User Story | Açıklama | Puan |
+|------------|----------|------|
+| EDA Genişletmesi | Derinlemesine veri analizi | 5 |
+| Model Karşılaştırması | KNN, RF değerlendirmesi | 5 |
+| GridSearch Uygulaması | Hiperparametre optimizasyonu | 8 |
+| API İncelemesi | Veri transferi ve endpoint | 5 |
+| XGBoost/LightGBM Hazırlığı | Yeni modellerin başlangıç çalışması | 3 |
+| Testler ve Doğruluk Takibi | Model doğruluklarının izlenmesi | 4 |
+| **Toplam** |  | **30 SP** |
+
+### 🎯 Gerçekleşen: 27 SP tamamlandı  
+> Grid Search işlemi veri setinde oldukça yavaş ilerlediği için hiperparametre optimizasyon süreci Sprint 3'e devredildi.
+
+---
+
+## 📊 Model Doğruluk Karşılaştırması
+
+| Model | Doğruluk Oranı |
+|-------|----------------|
+| KNN | %86 |
+| Random Forest | %89 |
+| GridSearch RF | Süre nedeniyle tamamlanamadı |
+
+---
+
+## 🧠 Teknik Notlar
+
+- GridSearchCV büyük veri boyutlarında yavaş çalıştığı için alternatif aramalar değerlendiriliyor.
+- KNN ve RF modellerinin temel karşılaştırmaları yapıldı.
+- XGBoost ve LightGBM için altyapı çalışmaları başlatıldı, Sprint 3’e taşındı.
+
+---
+
+## 🧪 EDA ve Veri Gözlemleri
+
+- BMI dağılımları, yaş/kilo ilişkileri ve obezite sınıflandırma dengesi incelendi.
+- Bazı kategorik değişkenlerin etkisi (ör. MTRANS, CAEC) grafiklerle görselleştirildi.
+- Outlier analizleri yapıldı.
+
+---
+
+## 🔧 API ve Veri Transferi
+
+- API endpoint'lerinde veri transfer yapısı test edildi.
+- Model input formatları stabilize edildi.
+- İleri düzey veri gönderim örnekleri oluşturuldu.
+
+---
+
+## ✅ Sprint Review
+
+### Tamamlananlar:
+
+- EDA çalışmaları derinleştirildi
+- KNN ve RF modelleri ile doğruluk karşılaştırıldı
+- API yapısı oluşturma adımları incelendi
+- Model çıktıları JSON formatında iyileştirildi
+
+---
+
+## 🔍 Sprint Retrospective
+
+| Zorluk | Açıklama |
+|--------|----------|
+| GridSearch Süresi | İşlem süresi nedeniyle tam uygulanamadı |
+| Kod Tekrarı | Bazı preprocessing işlemlerinde tekrarlar gözlemlendi |
+| Model Boyutu | Model dosyası boyutu arttıkça deploy süresi uzadı |
+
+### ✨ Öğrenilenler
+
+- Küçük veri setlerinde KNN gibi basit modeller bile oldukça başarılı olabilir.
+- Doğru EDA, model başarımını önemli ölçüde etkiler.
+- API transfer yapılarının erken stabilizasyonu geliştirme sürecini kolaylaştırır.
+
+---
+
+## 🧭 Bir Sonraki Sprint Planı (Sprint 3)
+
+| Hedef | Detay |
+|-------|-------|
+| GridSearch Tamamlanması | RF, XGBoost için hiperparametre ayarı |
+| XGBoost & LightGBM Testleri | Model karşılaştırması ve validasyon |
+| SHAP & LIME Entegrasyonu | Model açıklamalarının görselleştirilmesi |
+| Kullanıcı Testleri | Prototip üzerinden geri bildirim alınması |
+
+
+---
+
 ## 🛡️ Etik ve Güvenlik Notu
 
 - Tahminler yalnızca **eğitim ve araştırma** amaçlıdır.
