@@ -492,6 +492,15 @@ OBESITYRISKPREDICTIONAPP/
 - API transfer yapılarının erken stabilizasyonu geliştirme sürecini kolaylaştırır.
 
 ---
+### 📍 Sprint Board
+🔗 [![Kanban Tablosu:](https://i.imgur.com/kS3gjs5.png)](https://imgur.com/a/Gw464A0)
+
+### 📍 Daily Scrum
+
+[![Daily Scrum Ekran Görüntüsü](https://i.imgur.com/uEq6NJ4.png)](https://imgur.com/a/Gw464A0)  
+📸 Günlük toplantılara ait **birden fazla ekran görüntüsü** için yukarıdaki görsele tıklayabilirsiniz.
+
+---
 
 ## 🧭 Bir Sonraki Sprint Planı (Sprint 3)
 
