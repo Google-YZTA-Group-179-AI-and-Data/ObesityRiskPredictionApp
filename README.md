@@ -481,7 +481,7 @@ OBESITYRISKPREDICTIONAPP/
 
 | Zorluk | Açıklama |
 |--------|----------|
-| GridSearch Süresi | İşlem süresi nedeniyle tam uygulanamadı |
+| GridSearch Süresi | RF, KNN, SVM ve Gradient Boost için başarıyla uygulandı |
 | Kod Tekrarı | Bazı preprocessing işlemlerinde tekrarlar gözlemlendi |
 | Model Boyutu | Model dosyası boyutu arttıkça deploy süresi uzadı |
 
@@ -529,7 +529,7 @@ OBESITYRISKPREDICTIONAPP/
 | Atalay Aygül | ✅ Aktif |
 | Özkan Bırak | ✅ Aktif |
 | Gökhan Mutlu | ⛔ Katkı Sağlamadı |
-| Oğuzhan Memiş | ⚠️ Sınırlı |
+| Oğuzhan Memiş | ✅ Aktif |
 | Fatmanur Şahin | ⛔ Katkı Sağlamadı |
 
 ---
