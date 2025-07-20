@@ -497,7 +497,7 @@ OBESITYRISKPREDICTIONAPP/
 
 ### 📍 Daily Scrum
 
-[![Daily Scrum Ekran Görüntüsü](https://i.imgur.com/uEq6NJ4.png)](https://imgur.com/a/Gw464A0)  
+[![Daily Scrum Ekran Görüntüsü](https://i.imgur.com/uEq6NJ4.png)](https://imgur.com/gallery/daily-scrum-sprint-2-tz5JdUr)  
 📸 Günlük toplantılara ait **birden fazla ekran görüntüsü** için yukarıdaki görsele tıklayabilirsiniz.
 
 ---
