@@ -522,6 +522,149 @@ OBESITYRISKPREDICTIONAPP/
 
 ---
 
+
+# 🚀 Sprint 3 – Tamamlama ve Yayınlama
+
+> Sprint 3 Dönemi: **21 Temmuz – 3 Ağustos 2025**
+
+---
+
+## ✅ Sprint Hedefleri
+
+- Vercel’e tam entegre dağıtım için frontend ve backend yapılandırması
+- FCVC alanının kaldırılması ve formun 15 input alanıyla optimize edilmesi
+- Modern UI tasarımı ile responsive bir arayüz oluşturma
+- BMI tabanlı risk analizi ve kişiselleştirilmiş önerilerin eklenmesi
+- Loading state, hata yönetimi ve form validasyonlarının tamamlanması
+- README.md ve teknik belgelerin güncellenmesi
+- Gereksiz dosyaların temizlenmesi ve minimal proje yapısına geçiş
+
+---
+
+## 📈 Sprint Tahmin Puanları
+
+| User Story | Açıklama | Puan |
+|------------|----------|------|
+| Vercel Deployment Yapılandırması | vercel.json, vite.config.js eklenmesi | 5 |
+| FCVC Alanının Kaldırılması | Form ve model input güncellemeleri | 3 |
+| Modern UI & Responsive Design | Tailwind + custom CSS ile arayüz | 8 |
+| BMI Risk Analizi ve Öneriler | Risk seviyesi, tavsiyeler | 5 |
+| Loading & Error Handling | Kullanıcı deneyimi geliştirmesi | 3 |
+| README.md Güncellemesi | Kurulum, özellikler, görseller | 2 |
+| Gereksiz Dosyaların Silinmesi | Docker, eski src dosyaları vb. | 2 |
+| **Toplam** |  | **28 SP** |
+
+### 🎯 Gerçekleşen: **28 SP tamamlandı**  
+> Tüm hedefler başarıyla tamamlandı ve ürün Vercel üzerinden global erişime açıldı.
+
+---
+
+## 🖥️ Yeni Ürün Özellikleri
+
+- ✅ **Modern React + Vite yapısı**
+- ✅ **15 input alanlı form** (FCVC kaldırıldı)
+- ✅ **BMI tabanlı sınıflandırma** (7 kategori)
+- ✅ **Risk Seviyesi Belirleme**: Low, Medium, Medium-High, High, Very High
+- ✅ **Kişiselleştirilmiş Açıklamalar ve Sağlık Önerileri**
+- ✅ **Responsive Tasarım** – Mobil öncelikli yapı
+- ✅ **Loading State ve Hata Yönetimi**
+- ✅ **Vercel’de global dağıtım** (auto-deploy ile)
+
+---
+
+## 🔧 Teknik Değişiklikler
+
+### 1. **Yeni Proje Yapısı**
+- ❌ Eski dosyalar kaldırıldı:
+  - ap.py, eski React src dizini, docker-compose.yml, Dockerfile'lar, train.csv vb.
+- ✅ Yeni yapı:
+  - Modern React + Vite frontend
+  - Optimize edilmiş Flask API backend
+  - Minimal gereksinimler (requirements.txt güncellendi)
+
+### 2. **Backend (app.py)**
+- ✅ Gradient Boosting modeli (`boost_obesity.joblib`) entegre edildi
+- ✅ FCVC alanı tamamen kaldırıldı
+- ✅ API uç noktaları: `/api/health`, `/api/predict`
+- ✅ BMI hesaplama ve kişisel öneriler dahil edildi
+- ✅ Hata yönetimi ve input validasyonu
+
+### 3. **Frontend**
+- ✅ Modern arayüz: Gradient background + animasyonlar
+- ✅ Gerçek zamanlı form validasyonu
+- ✅ Kapsamlı sağlık analizi ekranı
+- ✅ Mobil uyumlu tasarım
+- ✅ FCVC alanı kaldırıldı, toplam 15 input alanı
+
+---
+
+## ✅ Tamamlanan Görevler
+
+- 📌 **Vercel deployment** yapılandırması tamamlandı
+- 📌 **README.md** yeniden düzenlendi (kurulum, dağıtım, ekran görüntüleri)
+- 📌 **Gereksiz dosyalar** temizlendi
+- 📌 **Modern UI** tasarımı uygulandı
+- 📌 **Uygulama global erişime açıldı**
+
+---
+
+## 📸 Ürün Görselleri
+
+### 📍 Ana Arayüz
+![Ana Arayüz Görseli](https://via.placeholder.com/800x400?text=Main+UI+Screenshot)
+
+### 📍 Tahmin Sonuç Ekranı
+![Sonuç Ekranı](https://via.placeholder.com/800x400?text=Prediction+Result+Screenshot)
+
+---
+
+### 📍 Sprint Board
+🔗 [![Kanban Tablosu](https://via.placeholder.com/600x300?text=Kanban+Board)](https://your-link-here)
+
+### 📍 Daily Scrum
+[![Daily Scrum Görselleri](https://via.placeholder.com/600x300?text=Daily+Scrum)](https://your-link-here)  
+📸 Günlük toplantılara ait **birden fazla ekran görüntüsü** için yukarıdaki görsele tıklayabilirsiniz.
+
+---
+
+## ✅ Sprint Review
+
+### Tamamlananlar:
+- Yeni arayüz geliştirildi
+- FCVC alanı kaldırıldı, form 15 input alanına göre düzenlendi
+- BMI tabanlı sınıflandırma ve risk seviyesi eklendi
+- Vercel üzerinden canlı yayına alındı
+- README.md güncellendi ve dağıtım yönergeleri yazıldı
+
+---
+
+## 🔍 Sprint Retrospective
+
+| Zorluk | Açıklama |
+|--------|----------|
+| UI Uygulaması | Gradient tasarım ve animasyonların mobil uyumlu yapılması |
+| Deployment Sorunları | Vercel config ve vite ayarlarında optimize gereksinimi |
+| Model Entegrasyonu | FCVC kaldırılırken model inputlarının yeniden düzenlenmesi |
+
+### ✨ Öğrenilenler
+- Minimal, temiz proje yapısı dağıtımı kolaylaştırır.
+- Vercel entegrasyonu frontend projelerinde son derece hızlı.
+- Kullanıcı deneyimini geliştiren UI ve hata yönetimi kritik.
+
+---
+
+## 🌍 Canlı Demo
+🔗 **[Uygulamayı Şimdi Deneyin](https://your-vercel-app.vercel.app)**  
+
+---
+
+## 🛡️ Etik ve Güvenlik Notu
+- Tahminler yalnızca **eğitim ve araştırma** amaçlıdır.
+- **Tıbbi tavsiye yerine geçmez**.
+- Kullanıcı verileri korunur ve üçüncü taraflarla paylaşılmaz.
+
+---
+
 ## 🧠 Katılımcı Durumu
 
 | Takım Üyesi | Katılım |
