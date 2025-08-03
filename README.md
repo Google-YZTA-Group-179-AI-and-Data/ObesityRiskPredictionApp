@@ -611,18 +611,18 @@ OBESITYRISKPREDICTIONAPP/
 ## 📸 Ürün Görselleri
 
 ### 📍 Ana Arayüz
-![Ana Arayüz Görseli](https://via.placeholder.com/800x400?text=Main+UI+Screenshot)
+[![Ana Arayüz Görseli](https://i.imgur.com/c6r3OzK.png)](https://i.imgur.com/c6r3OzK.png)
 
 ### 📍 Tahmin Sonuç Ekranı
-![Sonuç Ekranı](https://via.placeholder.com/800x400?text=Prediction+Result+Screenshot)
+[![Sonuç Ekranı](https://i.imgur.com/mI06Erh.png)](https://i.imgur.com/mI06Erh.png)
 
 ---
 
 ### 📍 Sprint Board
-🔗 [![Kanban Tablosu](https://via.placeholder.com/600x300?text=Kanban+Board)](https://your-link-here)
+[![Kanban Tablosu](https://i.imgur.com/uguDucr.png)](https://i.imgur.com/uguDucr.png)
 
 ### 📍 Daily Scrum
-[![Daily Scrum Görselleri](https://via.placeholder.com/600x300?text=Daily+Scrum)](https://your-link-here)  
+[![Daily Scrum Görselleri](https://i.imgur.com/pk1GTzf.png)](https://imgur.com/a/6XwCWkA)  
 📸 Günlük toplantılara ait **birden fazla ekran görüntüsü** için yukarıdaki görsele tıklayabilirsiniz.
 
 ---
@@ -654,7 +654,7 @@ OBESITYRISKPREDICTIONAPP/
 ---
 
 ## 🌍 Canlı Demo
-🔗 **[Uygulamayı Şimdi Deneyin](https://your-vercel-app.vercel.app)**  
+🔗 **[Uygulamayı Şimdi Deneyin](https://obesity-risk-prediction-wh3hpm0lk-ozkans-projects-15620efe.vercel.app/)**  
 
 ---
 
@@ -671,8 +671,8 @@ OBESITYRISKPREDICTIONAPP/
 |-------------|---------|
 | Atalay Aygül | ✅ Aktif |
 | Özkan Bırak | ✅ Aktif |
-| Gökhan Mutlu | ⛔ Katkı Sağlamadı |
 | Oğuzhan Memiş | ✅ Aktif |
+| Gökhan Mutlu | ⛔ Katkı Sağlamadı |
 | Fatmanur Şahin | ⛔ Katkı Sağlamadı |
 
 ---
