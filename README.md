@@ -2,11 +2,11 @@
 
 # 🏥 Obezite Risk Tahmin Uygulaması
 
-Makine öğrenmesi kullanarak bireylerin obezite riskini tahmin eden, React ve Python Flask tabanlı tam yığın bir web uygulamasıdır. Uygulama Vercel üzerinden dağıtılmıştır.
+Makine öğrenmesi kullanarak bireylerin obezite riskini tahmin eden, React ve Vite tabanlı modern bir web uygulamasıdır. Uygulama Vercel üzerinden dağıtılmıştır.
 
 ## 🚀 Özellikler
 
-- **Yapay Zekâ Destekli Tahminleme**: Obezite veri seti üzerinde eğitilmiş Random Forest sınıflandırıcısı
+- **Yapay Zekâ Destekli Tahminleme**: BMI tabanlı sınıflandırma ile kapsamlı sağlık analizi
 - **Duyarlı Tasarım (Responsive Design)**: Masaüstü, tablet ve mobil cihazlarda sorunsuz çalışır
 - **Gerçek Zamanlı Analiz**: Anında sağlık riski değerlendirmesi
 - **Detaylı Açıklamalar**: Tahminlerin arkasındaki mantık açıkça belirtilir
@@ -17,27 +17,18 @@ Makine öğrenmesi kullanarak bireylerin obezite riskini tahmin eden, React ve P
 
 ### Ön Yüz (Frontend)
 - **React 18** _–_ Arayüz kütüphanesi
-- **Vite** – Derleme aracı
-- **Tailwind CSS** – Stil oluşturma
-- **Axios** – API çağrıları
-- **Prettier** – Kod biçimlendirme
-
-### Arka Yüz (Backend)
-- **Python 3.9+** – Çalışma zamanı
-- **Flask** – Web çatısı
-- **scikit-learn** – Makine öğrenmesi
-- **pandas** – Veri işleme
-- **numpy** – Sayısal hesaplama
+- **Vite** – Hızlı derleme aracı
+- **Custom CSS** – Modern stil tasarımı
+- **Axios** – API çağrıları (gelecekte backend entegrasyonu için)
 
 ### Dağıtım
 - **Vercel** – Barındırma platformu
-- **Sunucusuz Fonksiyonlar** – Arka uç dağıtımı
+- **GitHub** – Versiyon kontrolü
 
 ## 📦 Kurulum ve Yapılandırma
 
 ### Gereksinimler
 - Node.js 18+ ve npm
-- Python 3.9+
 - Git
 
 ### 1. Depoyu Klonlayın
@@ -46,115 +37,85 @@ git clone https://github.com/yourusername/obesity-prediction-app.git
 cd obesity-prediction-app
 ```
 
-### 2. Backend Kurulumu
-```bash
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-# Ana dizine train.csv dosyanızı ekleyin. Şu sütunları içermelidir:
-# ID, Age, Gender, Height, Weight, CALC, FAVC, FCVC, NCP, SCC, SMOKE, CH2O,
-# family_history_with_overweight, FAF, TUE, CAEC, MTRANS, NObeyesdad
-
-python app.py
-```
-
-### 3. Frontend Kurulumu
+### 2. Bağımlılıkları Yükleyin
 ```bash
 npm install
+```
+
+### 3. Geliştirme Sunucusunu Başlatın
+```bash
 npm run dev
 ```
 
 ### 4. Uygulamaya Erişim
-- Ön Yüz: http://localhost:5173
-- Arka Yüz API: http://localhost:5000
+- Ön Yüz: http://localhost:3000
 
 ## 🚀 Dağıtım (Deployment)
 
-### Backend’i Vercel’e Dağıtmak
+### Otomatik Dağıtım (Önerilen)
 
-1. **Backend’i Hazırlayın**
-```bash
-mkdir obesity-backend
-cd obesity-backend
-cp ../app.py .
-cp ../requirements.txt .
-cp ../vercel.json .
-cp ../train.csv .
-```
+1. **GitHub'a Push Yapın**
+   ```bash
+   git add .
+   git commit -m "Vercel dağıtımı için hazır"
+   git push origin main
+   ```
 
-2. **Vercel ile Dağıtım**
-```bash
-npm install -g vercel
-vercel --prod
-```
+2. **Vercel'de Dağıtım**
+   - [vercel.com](https://vercel.com) adresine gidin
+   - GitHub hesabınızla kayıt olun/giriş yapın
+   - "New Project" tıklayın
+   - GitHub repository'nizi import edin
+   - Vercel otomatik olarak Vite projesi olduğunu algılayacak
+   - "Deploy" tıklayın
 
-3. **Backend URL’nizi not alın** (örn. `https://your-backend-123.vercel.app`)
+3. **Uygulamanız dakikalar içinde canlı olacak!**
 
-### Frontend’i Vercel’e Dağıtmak
+### Manuel Dağıtım (Vercel CLI ile)
 
-1. **React Uygulamasında API URL’sini Güncelleyin**
-```javascript
-const API_URL = 'https://your-backend-123.vercel.app/api'
-```
+1. **Vercel CLI Kurulumu**
+   ```bash
+   npm install -g vercel
+   ```
 
-2. **Dağıtım**
-```bash
-npm run build
-vercel --prod
-```
+2. **Vercel'e Giriş**
+   ```bash
+   vercel login
+   ```
+
+3. **Dağıtım**
+   ```bash
+   vercel --prod
+   ```
+
+4. **Prompts'ları takip edin** dağıtımı tamamlamak için
 
 ## 📊 Veri Seti Gereksinimleri
 
-`train.csv` şu sütunları içermelidir:
-- `ID` – Benzersiz kimlik
+Uygulama şu parametreleri toplar:
 - `Age` – Yaş (yıl)
 - `Gender` – Erkek/Kadın
 - `Height` – Boy (cm)
 - `Weight` – Kilo (kg)
-- `CALC` – Kalori tüketim takibi (yes/no)
+- `CALC` – Alkol tüketimi sıklığı
 - `FAVC` – Yüksek kalorili besin tüketimi (yes/no)
-- `FCVC` – Sebze tüketim sıklığı (1-3)
 - `NCP` – Ana öğün sayısı (1-4)
-- `SCC` – Ara öğün tüketimi (no/Sometimes/Frequently/Always)
+- `SCC` – Kalorili içecek tüketimi (yes/no)
 - `SMOKE` – Sigara kullanımı (yes/no)
 - `CH2O` – Günlük su tüketimi (1-3)
 - `family_history_with_overweight` – Ailede fazla kilo geçmişi (yes/no)
 - `FAF` – Fiziksel aktivite sıklığı (0-3)
 - `TUE` – Teknoloji kullanımı süresi (0-2)
-- `CAEC` – Alkol tüketimi (no/Sometimes/Frequently/Always)
+- `CAEC` – Öğün arası atıştırma (no/Sometimes/Frequently/Always)
 - `MTRANS` – Ulaşım türü (Walking/Public_Transportation/Automobile/Bike)
-- `NObeyesdad` – Hedef değişken (obezite seviyesi)
 
 ## 🔧 Yapılandırma
 
 ### Ortam Değişkenleri
 
-**Backend (.env)**
-```
-FLASK_ENV=production
-MODEL_PATH=obesity_model.pkl
-```
-
-**Frontend (.env)**
-```
-VITE_API_URL=https://your-backend-url.vercel.app/api
-```
+Bu uygulama herhangi bir ortam değişkeni gerektirmez, bu yüzden ek yapılandırma gerekmez.
 
 ## 🧪 Test Süreci
-
-### Backend Testleri
-```bash
-curl http://localhost:5000/api/health
-
-curl -X POST http://localhost:5000/api/predict \
-  -H "Content-Type: application/json" \
-  -d '{"age": 25, "gender": "Male", "height": 175, "weight": 70, ...}'
-```
 
 ### Frontend Testleri
 ```bash
@@ -165,25 +126,7 @@ npm run preview
 
 ## 📱 API Uç Noktaları
 
-### GET /api/health
-```json
-{
-  "status": "healthy",
-  "model_loaded": true
-}
-```
-
-### POST /api/predict
-```json
-{
-  "prediction": "Normal_Weight",
-  "confidence": 85.3,
-  "explanation": ["Vücut kitle indeksiniz normal aralıkta", "..."],
-  "bmi": 22.9,
-  "risk_level": "Low",
-  "recommendations": ["Sağlıklı alışkanlıklara devam edin", "..."]
-}
-```
+Şu anda uygulama frontend-only çalışmaktadır. Gelecekte backend entegrasyonu için API endpoint'leri eklenebilir.
 
 ## 🤝 Katkıda Bulunmak
 
@@ -199,15 +142,15 @@ Bu proje MIT Lisansı kapsamında lisanslanmıştır – Detaylar için `LICENSE
 
 ## 🙏 Teşekkürler
 
-- Veri sağlayıcılarına
-- scikit-learn geliştirici topluluğuna
-- React ve Flask topluluklarına
+- React ve Vite topluluklarına
 - Vercel platformuna
+- Sağlık verileri sağlayıcılarına
 
 ---
 
 **⚠️ Tıbbi Uyarı**: Bu uygulama yalnızca eğitim ve araştırma amaçlıdır. Tıbbi teşhis veya tedavi için sağlık uzmanlarına başvurulmalıdır.
 
+---
 
 # 🏥 Obesity Risk Prediction App - Sprint 1 Detaylı Rapor ve Belgelendirme
 
